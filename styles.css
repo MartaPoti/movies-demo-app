@@ -1,0 +1,17 @@
+body{
+    font-family: "Poppins",sans-serif;
+    background:#0a0812 ;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    background:rgba(219, 214, 241,0.7);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+
+    color:rgb(0, 0, 0)
+}
