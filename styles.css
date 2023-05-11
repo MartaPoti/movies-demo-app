@@ -31,6 +31,10 @@ h2 {
     font-weight: 500;
 }
 
+footer {
+    text-align: center;
+}
+
 .img-resp{
     max-width: 100%;
     margin: 0 auto;
