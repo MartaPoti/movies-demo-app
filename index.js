@@ -1,18 +1,68 @@
+
+        
+const today = new Date()
+
+
+const f = new Intl.DateTimeFormat("en-us",{
+    dataStyle: "full"
+
+})
+
+function formatDate(today){
+
+
+    
+let date=f.format(today)
+console.log(date)
+
+
+
+let dateElement = document.querySelector("#date");
+dateElement.innerHTML = f.format(today)
+
+}
+
 function showPopular(response){
+
+    let movies=(response.data.results)
    
-    let movieName=(response.data.results[0].title)
-    let h2=document.querySelector("h2")
-    h2.innerHTML=`${movieName}`
-    console.log (movieName)
-    let posterUrl=`https://image.tmdb.org/t/p/original/${(response.data.results[0].poster_path)}`
-   // let imgUrl = document.querySelector(".imgUrl")
-   // document.
-   // imgUrl.innerHTML=`${posterUrl}`
+    let cardElement=document.querySelector("#cards")
 
-    //let description=document.querySelector(".description")
-    //description.innerHTML=(response.data.results[0].overview)
+    let cardHTML="";
+    cardHTML=cardHTML + `<div class="cardsContainer grid grid-1-1-1">`
 
-    document.getElementById("img").src=posterUrl
+    movies.forEach(function (movie,index) {
+        if (index>0 && index<16)
+
+        cardHTML=cardHTML + `
+        
+         <div class="card card-header">
+                <div class="">
+                    <h2 class="movie-name">${movie.title}</h2>
+                    <p>${movie.overview}</p>
+                </div>
+
+                
+                    <img
+                  src="https://image.tmdb.org/t/p/original/${(movie.poster_path)}"
+                  alt=${movie.title}
+                  id="movie-poster"
+                  class="img-resp"
+                    />
+                
+         </div>
+       
+        `
+    }
+    
+    
+    
+    )
+
+
+    cardHTML=cardHTML + `</div>`,
+
+    cardElement.innerHTML= cardHTML
 
 }
 
@@ -24,3 +74,9 @@ axios.get(apiUrl).then(showPopular);
 
 
 handleResponse();
+formatDate(today);
+
+
+
+
+
