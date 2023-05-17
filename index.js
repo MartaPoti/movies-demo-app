@@ -36,19 +36,21 @@ function showPopular(response){
 
         cardHTML=cardHTML + `
         
-         <div class="card card-header">
-                <div class="">
+         <div class="kard grid-card" >
+               
                     <h2 class="movie-name">${movie.title}</h2>
                     <p>${movie.overview}</p>
-                </div>
+             
+              
 
-                
+                <div class="poster">
                     <img
                   src="https://image.tmdb.org/t/p/original/${(movie.poster_path)}"
                   alt=${movie.title}
                   id="movie-poster"
                   class="img-resp"
                     />
+                </div>
                 
          </div>
        

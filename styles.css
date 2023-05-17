@@ -11,19 +11,22 @@ body{
 }
 
 h1 {
-    text-align: center;
-    padding: 0 0 0 40px;
+    text-align:center;
+    padding: 0 0 0 ;
     color:rgb(0, 0, 0)
 }
 .header {
     padding: 50px
 }
 h2 {
-    
     text-align: center;
+   
     padding: 30px;
-    color:rgb(0, 0, 0)
+    color:rgb(0, 0, 0);
+    font-size: 64px;
 }
+
+
 #date {
     text-align: center;
    
@@ -32,20 +35,49 @@ h2 {
 }
 
 footer {
+    
     text-align: center;
 }
 
+.kard {
+
+    border:0;
+     padding:20px;
+     background: rgba(27, 8, 8,0.01);
+     box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.11);
+     border-radius: 5px;
+     display: grid;
+     grid-template-rows: 0.5fr 1fr 2fr;
+     align-items: end;
+     
+    
+ 
+        
+ }
+
 .img-resp{
-    max-width: 100%;
-    margin: 0 auto;
-    ;
+    display: block;
+   width: 100%;
+   align-self: end;
    
-
+   
+    
 }
 
-.card-header {
-    padding:20px;
+p 
+{
+    align-self: center;
+   
+  
 }
+
+.poster {
+
+    
+  
+ 
+}
+
 
 .grid {
     display: grid;
@@ -70,16 +102,7 @@ grid-template-columns: 1fr 1fr 1fr;
 }
 
 
-.card {
 
-   
-   
-    background: rgb(27, 8, 8);
-    box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.11)
-    ;
-
-       
-}
 
 @media (max-width:960px){
 
