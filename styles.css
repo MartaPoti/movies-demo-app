@@ -127,7 +127,7 @@ grid-template-columns: 1fr 1fr 1fr;
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    position:relative;
+    position:fixed;
     display: none;
 }
 
@@ -136,7 +136,7 @@ grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     background-color: rgba(0,0,0,0.7);
     display: none;
-    position:absolute;
+    position:fixed;
     top:0;
     align-items: center;
     justify-content: center;
@@ -150,4 +150,3 @@ grid-template-columns: 1fr 1fr 1fr;
 .choice {
     display: block;
     margin:auto   }
-}

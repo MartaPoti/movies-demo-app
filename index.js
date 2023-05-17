@@ -93,11 +93,6 @@ axios.get(apiUrl).then(showPopular);
 }
 
 
-let cardElement=document.querySelector("#cards")
-cardElement.addEventListener("click",showPopUp )
-
-let closerElement=document.querySelector("#closer")
-closerElement.addEventListener("click",closePopUp )
 
 
 handleResponse();
@@ -105,6 +100,11 @@ formatDate(today);
 
 
 
+let cardElement=document.querySelector("#cards")
+cardElement.addEventListener("click",showPopUp )
+
+let closerElement=document.querySelector("#closer")
+closerElement.addEventListener("click",closePopUp )
 
 
 
